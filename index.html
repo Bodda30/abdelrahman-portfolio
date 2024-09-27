@@ -63,11 +63,14 @@
             padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.4s ease;  /* Smooth transition for all elements */
+            transition: all 0.4s ease; /* Smooth transition for all elements */
+            transform: translateY(50px);
+            opacity: 0;
         }
 
         .skills:hover, .experience:hover, .contact:hover {
-            transform: translateY(-10px);
+            transform: translateY(0);
+            opacity: 1;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
         }
 
@@ -75,7 +78,7 @@
             color: #A67B5B;
             text-transform: uppercase;
             font-weight: 600;
-            transition: color 0.4s ease; /* Smooth transition */
+            transition: color 0.4s ease;
         }
 
         h3 {
@@ -95,12 +98,12 @@
         .skill-item h4 {
             margin-bottom: 0.5rem;
             font-weight: 600;
-            color: #8B5E34; /* Ensure same color as other headings */
+            color: #8B5E34;
         }
 
         .skill-item p {
             margin-bottom: 1rem;
-            color: #5F4A3C; /* Consistent color for all sections */
+            color: #5F4A3C;
         }
 
         /* Contact Form */
@@ -143,8 +146,8 @@
 
         /* Transitions and Animations */
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         /* Responsive Design */
@@ -259,8 +262,8 @@
             </label>
             <button type="submit">Send</button>
         </form>
-        <p>Email: abdobodda33@gmail.com</p>
-        <p>Phone: +201040541153</p>
+        <p>Email: <a href="mailto:abdobodda33@gmail.com">abdobodda33@gmail.com</a></p>
+        <p>Phone: <a href="tel:+201040541153">+201040541153</a></p>
         <p>Location: Shoubra, Cairo, Egypt</p>
     </section>
 
