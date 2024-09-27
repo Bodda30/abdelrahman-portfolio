@@ -57,7 +57,7 @@
         }
 
         /* Section Styles */
-        .skills, .experience, .contact {
+        .skills, .experience, .contact, .certifications {
             background-color: #FFF8E7;
             margin: 2rem auto;
             padding: 2rem;
@@ -66,7 +66,7 @@
             transition: all 0.4s ease;  /* Smooth transition for all elements */
         }
 
-        .skills:hover, .experience:hover, .contact:hover {
+        .skills:hover, .experience:hover, .contact:hover, .certifications:hover {
             transform: translateY(-10px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
         }
@@ -88,17 +88,17 @@
         }
 
         /* Skill Descriptions */
-        .skill-item {
+        .skill-item, .certification-item {
             margin-bottom: 1rem;
         }
 
-        .skill-item h4 {
+        .skill-item h4, .certification-item h4 {
             margin-bottom: 0.5rem;
             font-weight: 600;
             color: #8B5E34; /* Ensure same color as other headings */
         }
 
-        .skill-item p {
+        .skill-item p, .certification-item p {
             margin-bottom: 1rem;
             color: #5F4A3C; /* Consistent color for all sections */
         }
@@ -162,7 +162,7 @@
                 margin: 0.5rem 0;
             }
 
-            .skills, .experience, .contact {
+            .skills, .experience, .contact, .certifications {
                 margin: 1rem auto;
                 padding: 1.5rem;
             }
@@ -178,6 +178,7 @@
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -190,6 +191,10 @@
 
     <section id="skills" class="skills container">
         <h2>Skills</h2>
+        <div class="skill-item">
+            <h4>AI Expertise</h4>
+            <p>As an AI expert, I am skilled in using artificial intelligence technologies to analyze data and automate processes, helping businesses make informed decisions.</p>
+        </div>
         <div class="skill-item">
             <h4>Programming Languages</h4>
             <p>Proficient in Python, Java, and C++. I use programming to solve complex problems and develop efficient solutions.</p>
@@ -239,7 +244,22 @@
 
         <h3>English Customer Service Agent, Amazon UK (2024)</h3>
         <p>Provided high-quality customer support in English, addressing inquiries and resolving issues efficiently, enhancing customer satisfaction.</p>
+    </section>
 
+    <section id="certifications" class="certifications container">
+        <h2>Certifications</h2>
+        <div class="certification-item">
+            <h4>Google Digital Marketing Certification</h4>
+            <p>Completed a comprehensive course on digital marketing strategies, including SEO, SEM, social media marketing, and analytics.</p>
+        </div>
+        <div class="certification-item">
+            <h4>Adobe Certified Expert (ACE)</h4>
+            <p>Demonstrated proficiency in Adobe Photoshop and Illustrator, validating my skills in graphic design and digital content creation.</p>
+        </div>
+        <div class="certification-item">
+            <h4>Microsoft Office Specialist</h4>
+            <p>Certified in advanced Excel, Word, and PowerPoint, showcasing my expertise in utilizing Microsoft Office tools effectively.</p>
+        </div>
     </section>
 
     <section id="contact" class="contact container">
@@ -259,8 +279,8 @@
             </label>
             <button type="submit">Send</button>
         </form>
-        <p>Email: abdobodda33@gmail.com</p>
-        <p>Phone: +201040541153</p>
+        <p>Email: <a href="mailto:abdobodda33@gmail.com">abdobodda33@gmail.com</a></p>
+        <p>Phone: <a href="tel:+201040541153">+201040541153</a></p>
         <p>Location: Shoubra, Cairo, Egypt</p>
     </section>
 
