@@ -63,17 +63,19 @@
             padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            transition: all 0.4s ease;  /* Smooth transition for all elements */
         }
 
         .skills:hover, .experience:hover, .contact:hover {
             transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
         }
 
         h2 {
             color: #A67B5B;
             text-transform: uppercase;
             font-weight: 600;
+            transition: color 0.4s ease; /* Smooth transition */
         }
 
         h3 {
@@ -93,10 +95,12 @@
         .skill-item h4 {
             margin-bottom: 0.5rem;
             font-weight: 600;
+            color: #8B5E34; /* Ensure same color as other headings */
         }
 
         .skill-item p {
             margin-bottom: 1rem;
+            color: #5F4A3C; /* Consistent color for all sections */
         }
 
         /* Contact Form */
@@ -107,6 +111,12 @@
             border: 1px solid #D1B49C;
             border-radius: 8px;
             font-family: 'Poppins', sans-serif;
+            transition: border 0.3s ease;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #A67B5B;
+            outline: none;
         }
 
         .contact-form button {
